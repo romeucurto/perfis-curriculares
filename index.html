@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Síntese dos resultados da tese de doutoramento de Romeu Curto sobre perfis curriculares de guitarra clássica nos conservatórios públicos portugueses e da proposta de contrato curricular leve.">
+<meta name="description" content="Síntese dos resultados da tese de doutoramento de Romeu Curto, orientada pelo Prof. Doutor Nuno Fraga (Universidade da Madeira), sobre perfis curriculares de guitarra clássica nos conservatórios públicos portugueses e a proposta de contrato curricular leve.">
 <meta name="author" content="Romeu Curto">
 <title>Contrato Curricular Leve</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -174,13 +174,20 @@ blockquote cite{display:block; margin-top:14px; font:400 .84rem/1.4 var(--f-mono
 .pub:last-child{border-bottom:1px solid var(--line)}
 .pub .jr{font:500 .76rem/1.4 var(--f-mono); letter-spacing:.06em; text-transform:uppercase; color:var(--brass)}
 .pub h3{font-size:1.2rem; margin-bottom:8px}
+.pub .au{font-size:.95rem; color:var(--ink-2); margin-bottom:6px}
 .pub .doi{font-family:var(--f-mono); font-size:.86rem; word-break:break-all}
 @media (max-width:620px){ .pub{grid-template-columns:1fr; gap:8px} }
-.contact{margin-top:40px; display:flex; flex-wrap:wrap; gap:12px 18px; align-items:center; padding:22px 24px; border:1px solid var(--line); background:var(--surface)}
-.contact .mail{font-family:var(--f-mono); font-size:1rem; color:var(--ink); user-select:all; word-break:break-all}
-.contact button{font:500 .88rem/1 var(--f-body); padding:10px 14px; border:1px solid var(--accent); background:transparent; color:var(--accent); border-radius:999px; cursor:pointer}
-.contact button:hover{background:var(--accent); color:var(--bg)}
-.contact .st{font-size:.85rem; color:var(--ink-2)}
+.contact{margin-top:32px; font-size:1rem}
+.contact .mail{font-family:var(--f-mono); color:var(--ink); user-select:all; word-break:break-all}
+
+.credits{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0; border-block:1px solid var(--line)}
+.credits > div{padding:22px 20px 22px 0; display:grid; gap:6px; align-content:start; min-width:0}
+.credits > div + div{padding-left:20px; border-left:1px solid var(--line)}
+.credits .role{font:500 .72rem/1 var(--f-mono); letter-spacing:.1em; text-transform:uppercase; color:var(--brass)}
+.credits .who{font-family:var(--f-display); font-size:1.3rem; line-height:1.25}
+.credits .aff{font-size:.9rem; color:var(--ink-2)}
+@media (max-width:760px){ .credits{grid-template-columns:1fr} .credits > div + div{padding-left:0; border-left:0; border-top:1px solid var(--line)} }
+.thanks{margin-top:28px; font-size:.95rem; color:var(--ink-2)}
 
 footer{border-top:1px solid var(--line); padding-block:40px 56px; font-size:.88rem; color:var(--ink-2); display:grid; gap:10px}
 .stack > * + *{margin-top:16px}
@@ -200,6 +207,7 @@ footer{border-top:1px solid var(--line); padding-block:40px 56px; font-size:.88r
     <a class="l opt" href="#cne">CNE 2026</a>
     <a class="l opt" href="#estudo">O estudo</a>
     <a class="l" href="#publicacoes">Publicações</a>
+    <a class="l opt" href="#creditos">Créditos</a>
   </div>
 </nav>
 
@@ -213,8 +221,8 @@ footer{border-top:1px solid var(--line); padding-block:40px 56px; font-size:.88r
   <div class="byline">
     <span><b>Romeu Curto</b></span>
     <span>Tese de doutoramento em Currículo e Inovação Pedagógica</span>
-    <span>CIE-UMa, Universidade da Madeira</span>
-    <span>Orientação: Prof. Doutor Nuno Fraga</span>
+    <span>Universidade da Madeira</span>
+    <span>Orientação: <b>Prof. Doutor Nuno Fraga</b></span>
   </div>
 </header>
 
@@ -585,6 +593,7 @@ footer{border-top:1px solid var(--line); padding-block:40px 56px; font-size:.88r
       <p class="jr">Frontiers in Education<br>vol. 11 · 2026</p>
       <div>
         <h3>Curricular governance and teacher professional learning in specialized arts education: a multiple-case study of classical guitar teaching in Portuguese public conservatories (with a comparative lens on Spain)</h3>
+        <p class="au">Romeu Curto e Nuno Fraga</p>
         <a class="doi" href="https://doi.org/10.3389/feduc.2026.1854394">doi.org/10.3389/feduc.2026.1854394</a>
       </div>
     </div>
@@ -592,21 +601,42 @@ footer{border-top:1px solid var(--line); padding-block:40px 56px; font-size:.88r
       <p class="jr">Music Education Research<br>2026</p>
       <div>
         <h3>Beyond the score: governance, performativity, and the territorialization of specialized artistic education in Portugal</h3>
+        <p class="au">Romeu Curto e Nuno Fraga</p>
         <a class="doi" href="https://doi.org/10.1080/14613808.2026.2711394">doi.org/10.1080/14613808.2026.2711394</a>
       </div>
     </div>
   </div>
-  <div class="contact" id="contacto">
-    <span class="muted">Contacto para apresentações, sessões de trabalho ou pilotos:</span>
-    <span class="mail" id="mail">romeu.curto@staff.uma.pt</span>
-    <button type="button" id="copy">Copiar email</button>
-    <span class="st" id="copy-st" aria-live="polite"></span>
+  <p class="contact" id="contacto">Contacto: <span class="mail">romeu.curto@staff.uma.pt</span></p>
+</section>
+
+<section id="creditos" aria-labelledby="h-cred">
+  <div class="sec-head col">
+    <p class="eyebrow">Créditos</p>
+    <h2 id="h-cred">Autoria e orientação</h2>
   </div>
+  <div class="credits">
+    <div>
+      <p class="role">Investigação e autoria</p>
+      <p class="who">Romeu Curto</p>
+      <p class="aff">Doutoramento em Currículo e Inovação Pedagógica</p>
+    </div>
+    <div>
+      <p class="role">Orientação científica</p>
+      <p class="who">Prof. Doutor Nuno Fraga</p>
+      <p class="aff">Universidade da Madeira</p>
+    </div>
+    <div>
+      <p class="role">Instituição</p>
+      <p class="who">Universidade da Madeira</p>
+      <p class="aff">Funchal</p>
+    </div>
+  </div>
+  <p class="thanks col">Agradece-se aos conservatórios públicos que abriram as portas a este estudo, e aos diretores pedagógicos, docentes de guitarra clássica, decisores e alunos que nele participaram. Os seus contributos estão anonimizados.</p>
 </section>
 
 <footer>
   <p class="lede" style="font-size:1.15rem; color:var(--ink)">Que a excelência não dependa do acaso do lugar, mas da seriedade com que o sistema decide o que está disposto a garantir.</p>
-  <p>Romeu Curto · Tese de doutoramento, CIE-UMa, Universidade da Madeira, 2026. Síntese dos resultados para os conservatórios públicos de música.</p>
+  <p>Romeu Curto · Tese de doutoramento orientada pelo Prof. Doutor Nuno Fraga, Universidade da Madeira, 2026. Síntese dos resultados para os conservatórios públicos de música.</p>
   <p>Os participantes estão anonimizados. Nenhum conservatório é identificado nesta página.</p>
 </footer>
 
@@ -630,14 +660,6 @@ footer{border-top:1px solid var(--line); padding-block:40px 56px; font-size:.88r
       if(!d) return;
       var n = tabs[(i + d + tabs.length) % tabs.length]; select(n); n.focus(); e.preventDefault();
     });
-  });
-  var btn=document.getElementById('copy'), st=document.getElementById('copy-st'), mail=document.getElementById('mail');
-  btn.addEventListener('click', function(){
-    var t=mail.textContent.trim();
-    function sel(){ var r=document.createRange(); r.selectNodeContents(mail); var w=getSelection(); w.removeAllRanges(); w.addRange(r); st.textContent='Selecionado. Use Ctrl+C ou Cmd+C.'; }
-    if(navigator.clipboard && navigator.clipboard.writeText){
-      navigator.clipboard.writeText(t).then(function(){ st.textContent='Copiado.'; }, sel);
-    } else sel();
   });
 })();
 </script>
